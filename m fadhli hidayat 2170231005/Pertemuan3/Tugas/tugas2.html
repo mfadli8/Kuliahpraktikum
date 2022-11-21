@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Kalkulator</title>
+</head>
+<body>
+     bilangan 1: <input type="text" name="bil1" id="bil1"><br> bilangan 2: <input type="text" name="bil2" id="bil2"><br> Operator:
+    <input type="submit" value="+" id="tambah">
+    <input type="submit" value="-" id="kurang">
+    <input type="submit" value="*" id="kali">
+    <input type="submit" value="/" id="bagi"><br> Hasil: <input type="text" name="hasil" id="hasil">
+
+    <script>
+        const bil1 = document.getElementById('bil1')
+        const bil2 = document.getElementById('bil2')
+
+        const tambah = document.getElementById('tambah')
+        const kurang = document.getElementById('kurang')
+        const kali = document.getElementById('kali')
+        const bagi = document.getElementById('bagi')
+
+        const hasil = document.getElementById('hasil')
+
+        tambah.addEventListener('click', () => {
+            let result = Number(bil1.value) + Number(bil2.value)
+            hasil.setAttribute('value', result)
+        })
+
+        kurang.addEventListener('click', () => {
+            let result = Number(bil1.value) - Number(bil2.value)
+            hasil.setAttribute('value', result)
+        })
+
+        kali.addEventListener('click', () => {
+            let result = Number(bil1.value) * Number(bil2.value)
+            hasil.setAttribute('value', result)
+        })
+
+        bagi.addEventListener('click', () => {
+            let result = Number(bil1.value) / Number(bil2.value)
+            hasil.setAttribute('value', result)
+        })
+    </script>
+</body>
+</html>
