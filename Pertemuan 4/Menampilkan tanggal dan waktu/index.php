@@ -16,8 +16,8 @@
         $jumlah = $nilai_1 + $nilai_2;
         echo "hasil dari $nilai_1 + $nilai_2 adalah : $jumlah";
         echo "<br><br>";
-        echo "\"Nama : Muhammad Irfan Basyir\" <br>";
-        echo "NIM : 2170231095";
+        echo "\"Nama : M fadhli hidayat\" <br>";
+        echo "NIM : 2170231005";
     ?>
     <?php
         echo "<br>";
@@ -34,6 +34,10 @@
 
         echo "<br>";
         echo date("m-F-Y, g:i:s a");
-    ?> 
+        echo "<br>";
+        echo date("m/F/Y, g:i:s a");
+        echo "<br>";
+        echo date("m.F.Y, g:i:s a");
+     ?> 
 </body>
 </html>
