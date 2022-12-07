@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bg1.jpg);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+.atas{
+    position: relative;
+    width: 380px;
+    height: 420px;
+}
+
+.kotak{
+    position: absolute;
+    inset: 8px;
+    border-radius: 20px;
+    z-index: 20;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    background: cornsilk;
+}
+h2{
+    color: darkseagreen;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.inputbox{
+    position: relative;
+    width: 200px;
+    margin-top: 4px;
+}
+
+.inputbox input{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+}
+.tombol{
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tombol{
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tombol:hover{
+    background-color: aquamarine;
+    transition: all 1s ease 0s;
+    color: #28292d;
+}
